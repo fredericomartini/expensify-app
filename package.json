@@ -1,8 +1,8 @@
 {
-  "name": "indecision-app",
+  "name": "expensify-app",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "https://github.com/fredericomartini/indecision-app.git",
+  "repository": "https://github.com/fredericomartini/expensify-app.git",
   "author": "Frederico Martini <fredmalmeida@gmail.com>",
   "scripts": {
     "server": "live-server public/",
@@ -25,6 +25,7 @@
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "react-modal": "^3.9.1",
+    "react-router-dom": "4.2.2",
     "sass-loader": "^7.3.1",
     "style-loader": "^1.0.0",
     "validator": "8.0.0",
