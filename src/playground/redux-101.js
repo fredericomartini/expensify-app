@@ -17,20 +17,34 @@ const store = createStore((state = { count: 0 }, action) => {
   }
 });
 
+const increment = (by) => ({
+  type: 'INCREMENT',
+  incrementBy: by,
+});
+
+const decrement = (by) => ({
+  type: 'DECREMENT',
+  decrementBy: by,
+});
+
+const reset = () => ({
+  type: 'RESET',
+});
+
 store.subscribe(() => {
   console.log(store.getState());
 });
 
 // console.log(store.getState());
 
-store.dispatch({ type: 'INCREMENT', incrementBy: 5 });
-store.dispatch({ type: 'INCREMENT' });
+// store.dispatch({ type: 'INCREMENT', incrementBy: 5 });
+store.dispatch(increment(5));
 
 // console.log(store.getState());
 
-store.dispatch({ type: 'DECREMENT', decrementBy: 3 });
+store.dispatch(decrement(15));
 // console.log(store.getState());
 
-store.dispatch({ type: 'RESET' });
+store.dispatch(reset());
 
 // console.log(store.getState());
