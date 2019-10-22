@@ -13,7 +13,6 @@ const ExpenseList = (props) => (
       SortBy:
       <select
         value={props.sortBy || 'date'}
-        defaultValue="date"
         onChange={({ target: { value } }) => {
           switch (value) {
             case 'amount':

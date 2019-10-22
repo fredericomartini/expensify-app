@@ -1,28 +1,11 @@
 import React from 'react';
-import { connect } from 'react-redux';
-import { addExpense } from '../actions/expenses';
+import ExpenseForm from './ExpenseForm';
 
-const AddExpense = (props) => (
+const AddExpense = () => (
   <div>
-    <h3>This is the add expense</h3>
-    Description:
-    {' '}
-    <input name="description" type="text" />
-    Amount:
-    {' '}
-    <input name="amount" type="text" />
-    <button
-      type="submit"
-      onClick={(e) => {
-        console.log(props);
-        // props.dispatch(addExpense())
-      }}
-    >
-      Save Expense
-    </button>
+    <h1>Add Expense</h1>
+    <ExpenseForm />
   </div>
 );
 
-const mapStateToProps = (state) => ({ ...state });
-
-export default connect(mapStateToProps)(AddExpense);
+export default AddExpense;
