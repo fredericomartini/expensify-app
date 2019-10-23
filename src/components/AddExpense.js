@@ -8,7 +8,9 @@ const AddExpense = (props) => (
     <h1>Add Expense</h1>
     <ExpenseForm
       onSubmit={(expense) => {
+        // add data to redux store
         props.dispatch(addExpense(expense));
+        // use history push method to switch pages
         props.history.push('/');
       }}
     />
