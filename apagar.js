@@ -6,3 +6,5 @@ console.log(
     .endOf('M')
     .valueOf(),
 );
+
+console.log(moment('2019-04-26'));
