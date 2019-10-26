@@ -27,7 +27,7 @@ const ExpenseList = (props) => (
       </select>
     </h3>
     {props.expenses && props.expenses.length !== 0 ? (
-      props.expenses.map((expense) => <Expense key={expense.id} {...expense} />)
+      props.expenses.map((expense) => <Expense key={expense.id} expense={expense} />)
     ) : (
       <p> No expenses</p>
     )}
