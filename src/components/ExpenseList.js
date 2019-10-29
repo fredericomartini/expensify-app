@@ -2,13 +2,12 @@ import React from 'react';
 import { connect } from 'react-redux';
 import Expense from './Expense';
 import expensesSelector from '../selectors/expenses';
-import ExpenseFilter from './ExpenseFilter';
+
 import { sortByAmount, sortByDate } from '../actions/filters';
 
-const ExpenseList = (props) => (
+export const ExpenseList = (props) => (
   <div>
     <h1>Expenses List</h1>
-    <ExpenseFilter />
     <h3>
       SortBy:
       <select
